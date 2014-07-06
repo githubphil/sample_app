@@ -1,5 +1,77 @@
-$body-bg:    #1abc9c;
-$navbar-default-bg: #16a085;
-$navbar-default-link-color: white;
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+
+$body-bg:                		 #ecf0f1;
+$font-family-sans-serif: 		 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$navbar-height: 				 		 45px;
+$navbar-default-bg: 		 		 white;
+$navbar-default-brand-color: #c0392b;
+$brand-primary: 						 #c0392b;
+$jumbotron-bg:  						 white;
 
 @import 'bootstrap';
+
+.center {
+     text-align: center;
+}
+
+.navbar-brand {
+     font-weight: bold;
+}
+
+/* Anmelden Gestaltung */
+#si_link {
+	color: white;
+  background-color: #c0392b;
+  border-color: #ab3326;
+}
+
+#si_link:hover, #si_link:focus, #si_link:active, #si_link.active, .open > #si_link.dropdown-toggle {
+  color: white;
+  background-color: #962d22;
+  border-color: #79241b;
+}
+
+#si_link:active, #si_link.active, .open > #si_link.dropdown-toggle {
+  background-image: none;
+}
+
+#si_link.disabled, #si_link.disabled:hover, #si_link.disabled:focus, #si_link.disabled:active, #si_link.disabled.active, #si_link[disabled], #si_link[disabled]:hover, #si_link[disabled]:focus, #si_link[disabled]:active, #si_link[disabled].active, fieldset[disabled] #si_link, fieldset[disabled] #si_link:hover, fieldset[disabled] #si_link:focus, fieldset[disabled] #si_link:active, fieldset[disabled] #si_link.active {
+  background-color: #c0392b;
+  border-color: #ab3326;
+}
+
+#si_link .badge {
+  color: #c0392b;
+  background-color: white;
+}
+/* Anmelden Ende */
+
+/* Abmelden Gestaltung */
+#so_link {
+	color: white;
+  background-color: #2ecc71;
+  border-color: #339966;
+}
+
+#so_link:hover, #so_link:focus, #so_link:active, #so_link.active, .open > #so_link.dropdown-toggle {
+  color: white;
+  background-color: #229a55;
+  border-color: #339966;
+}
+
+#so_link:active, #so_link.active, .open > #so_link.dropdown-toggle {
+  background-image: none;
+}
+
+#so_link.disabled, #so_link.disabled:hover, #so_link.disabled:focus, #so_link.disabled:active, #so_link.disabled.active, #so_link[disabled], #so_link[disabled]:hover, #so_link[disabled]:focus, #so_link[disabled]:active, #so_link[disabled].active, fieldset[disabled] #so_link, fieldset[disabled] #so_link:hover, fieldset[disabled] #so_link:focus, fieldset[disabled] #so_link:active, fieldset[disabled] #so_link.active {
+  background-color: #229a55;
+  border-color: #339966;
+}
+
+#so_link .badge {
+  color: #229a55;
+  background-color: white;
+}
+
+/* Abmelden Ende */
+
