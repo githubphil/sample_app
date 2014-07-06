@@ -18,10 +18,12 @@
         <li><%= link_to "Startseite", root_path %></li>
         <li><%= link_to "Über uns", about_path %></li>
         <% if user_signed_in? %>
+        <li><%= link_to "Konto", edit_user_registration_path %></li>
         <li><%= link_to "Abmelden", destroy_user_session_path, method: :delete, id:"so_link" %></li>
         <% else %>
         <li><%= link_to "Anmelden", new_user_session_path, id:"si_link" %></li>
         <% end %>
+        <li><%= link_to "Admin", administrator_path %></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container -->

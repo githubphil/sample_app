@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @dossier.name %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @dossier.type %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @dossier.amount %>
+</p>
+
+<p>
+  <strong>Dmyfrom:</strong>
+  <%= @dossier.dmyfrom %>
+</p>
+
+<p>
+  <strong>Dmyto:</strong>
+  <%= @dossier.dmyto %>
+</p>
+
+<%= link_to 'Edit', edit_dossier_path(@dossier) %> |
+<%= link_to 'Back', dossiers_path %>
